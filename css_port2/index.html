@@ -68,29 +68,57 @@
             </div>
             
         </div>   
-            <!-- click through images/roate -->  
+            <!-- click through images/rotate -->  
     <script>
         //eventlistener for onClick?        
-        buttonpressed.addEventListener("click", changeImage())
         let count = 0;
-        if (buttonpressed.addEventListener("click", changeImage())){
-            count += 1;
-            console.log("yep")
-        }
         function changeImage(){
+          
+            count++;
             var image = document.getElementById("1");
             var image2 = document.getElementById("2");
             var image3 = document.getElementById("3");
-            image.src = "/dndposter.jpg";
-            image2.src = "/incepPoster.jpg";
-            image3.src = "/mandalposter.jpg";
-            if (count === 1 ){
+            if (count === 1){
+                image.src = "/dndposter.jpg";
+                image2.src = "/incepPoster.jpg";
+                image3.src = "/mandalposter.jpg";
+            }
+            if (count === 2){
                 image.src = "/mandalposter.jpg";
                 image2.src = "/dndposter.jpg";
                 image3.src = "/incepPoster.jpg";
             }
+            if (count === 3){
+                image.src = "/incepPoster.jpg";
+                image2.src = "/mandalposter.jpg";
+                image3.src = "/dndposter.jpg";
+                count = 0;
+            }
 
-            return false;
+        }      
+        //let countRight = 0;
+        function changeImage1(){         
+            count++;
+            var image = document.getElementById("1");
+            var image2 = document.getElementById("2");
+            var image3 = document.getElementById("3");
+            if (count === 1){
+                image.src = "/mandalposter.jpg";
+                image2.src = "/dndposter.jpg";
+                image3.src = "/incepPoster.jpg";
+            }
+            if (count === 2){
+                image.src = "/dndposter.jpg";
+                image2.src = "/incepPoster.jpg";
+                image3.src = "/mandalposter.jpg"; 
+            }
+            if (count === 3){
+                image.src = "/incepPoster.jpg";
+                image2.src = "/mandalposter.jpg";
+                image3.src = "/dndposter.jpg";
+                count = 0;
+            }
+
         }
         //rotate round aka
     </script>       
