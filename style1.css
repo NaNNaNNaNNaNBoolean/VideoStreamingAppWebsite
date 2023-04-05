@@ -1,0 +1,97 @@
+html {
+    background: linear-gradient(to top, rgb(0, 71, 0),rgb(255, 255, 255))
+}
+/* Header */
+.header {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.logo {
+    width: 5%;
+}
+/* Main video preview */
+.preview {
+    margin: auto;
+    width: 50%;
+}
+.preview-img {
+    border-radius: 2%;
+}
+/* buttons */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+}
+.play {
+    height: 80px;
+    width: 700px;
+    padding: 10px 250px 10px 250px;
+    font-size: 40px;
+    border-radius: 10px;
+    border-color: rgb(50, 71, 50);
+    background:rgb(50, 71, 50);
+    color: white;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px 10px 10px;
+}
+.buttons {
+    height: 80px;
+    padding: 10px 50px 10px 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    border-color: rgb(50, 71, 50);
+    background:rgb(50, 71, 50);
+    color: white;
+}
+
+/* Episodes */
+.episodes {
+    display: flex;
+}
+/* Episode thumnail */
+.episode-img {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: left;
+    width: 30%;
+}
+.description-column {
+    text-align: center;
+    margin-right: 5%;
+    width: 55%;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+.thumnails {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 5%;
+}
+
+.description {
+    box-sizing: border-box;
+    width: 100%;
+    height: 21%;
+    padding: 10%;
+    font-size: 50px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
